@@ -1,0 +1,21 @@
+.aside {
+  width: 285px;
+  padding-top: 6px;
+
+  &__box {
+    background-color: #2f9ff8;
+    border-radius: 4px;
+    color: #fff;
+    padding: 20px 20px 20px 60px;
+  }
+
+  &__mb {
+    margin-bottom: 11px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aside {
+    display: none;
+  }
+}

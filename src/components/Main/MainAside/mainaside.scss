@@ -1,0 +1,56 @@
+.maside {
+  width: 100%;
+  background-color: #2f9ff8;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 22px 11px 0;
+  margin-bottom: 18px;
+
+  &__desc {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 18px;
+
+    i {
+      font-size: 30px;
+      margin-right: 15px;
+    }
+  }
+
+  &__pricebox {
+    display: flex;
+    align-items: center;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin-right: 22px;
+  }
+
+  &__price-span {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  &__btn {
+    background-color: #0768b5;
+    border: 1px solid #0768b5;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    padding: 10px 27px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: #04579b;
+      border-color: #04579b;
+    }
+  }
+}

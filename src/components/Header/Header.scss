@@ -1,0 +1,148 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+
+  &__logobox {
+    width: 260px;
+    padding-left: 48px;
+  }
+
+  &__logo {
+    width: 167px;
+    height: 41px;
+  }
+
+  &__box {
+    width: 771px;
+    display: flex;
+    align-items: center;
+    margin: 0 48px;
+  }
+
+  &__form {
+    width: 239px;
+    position: relative;
+    background: #2f9ff80a;
+    border-radius: 4px;
+    padding: 11px;
+    margin-right: 41px;
+  }
+
+  &__input {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 15px;
+    line-height: 18px;
+    outline: none;
+
+    &::placeholder {
+      color: #072d4b4d;
+    }
+  }
+
+  &__form-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #072d4b;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    font-size: 13px;
+    line-height: 15px;
+    color: #072d4b;
+    border-right: 1px solid #072e4b60;
+    padding-right: 12px;
+    margin-left: 23px;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  //right part
+
+  &__settings {
+    width: 285px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sunbox {
+    height: 46px;
+    display: flex;
+    background-color: #2f9ff80a;
+    border-radius: 4px;
+    padding: 1px;
+  }
+
+  &__whitebtn,
+  &__nightbtn {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    margin-right: 2px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    &:hover i {
+      transform: scale(1.2);
+    }
+
+    i {
+      font-size: 24px;
+      color: #ffc038;
+      transition: all 0.4s ease;
+    }
+  }
+
+  &__nightbtn {
+    background-color: transparent;
+
+    i {
+      font-size: 24px;
+      color: #000;
+    }
+  }
+
+  &__langbox {
+    background-color: rgba(47, 159, 248, 0.04);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #072d4b;
+    padding: 10px 22px;
+    outline: none;
+  }
+
+  &__langbtn {
+    background-color: rgba(47, 159, 248, 0.04);
+    padding: 10px 22px;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .header {
+    display: none;
+  }
+}

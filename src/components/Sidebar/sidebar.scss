@@ -1,0 +1,141 @@
+.sidebar {
+  width: 260px;
+  height: 100%;
+  padding-top: 3px;
+
+  &__nav-list {
+    margin-right: 11px;
+  }
+
+
+  &__nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #072d4b;
+    transition: all 0.4s ease;
+    padding: 13px 20px 13px 33px;
+
+    &:hover {
+      background-color: #2f9ff81a;
+      border-radius: 0px 37px 37px 0px;
+      font-weight: 400;
+      color: #2f9ff8;
+    }
+
+    &:hover .sidebar__nav-icon {
+      stroke: #2f9ff8;
+    }
+
+  }
+
+  &__nav-active {
+    position: relative;
+    background-color: #2f9ff81a;
+    border-radius: 0px 37px 37px 0px;
+    color: #2f9ff8 !important;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background-color: #2f9ff8;
+      border-radius: 50%;
+    }
+
+    & .sidebar__nav-item {
+      background-color: #2f9ff81a;
+      border-radius: 0px 37px 37px 0px;
+      font-weight: 700 !important;
+      color: #2f9ff8;
+
+      & path, svg {
+        stroke: #2f9ff8;
+      }
+    }
+
+    & .sidebar__nav-right {
+      top: 24%;
+      transform: rotate(90deg);
+      color: #2f9ff8;
+    }
+  }
+
+  &__nav-icon {
+    display: block;
+    font-size: 24px;
+    margin-right: 22px;
+  }
+
+  &__nav-iconactiv {
+    color: #2f9ff8;
+  }
+
+  &__nav-right {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 27px;
+    color: #072d4b;
+    transition: all 0.2s ease;
+  }
+
+  &__list {
+    padding-top: 15px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 15px;
+    line-height: 18px;
+    color: #072d4b;
+    transition: all 0.4s ease;
+    padding-left: 79px;
+    margin-bottom: 15px;
+
+    &:hover {
+      color: #2f9ff8;
+    }
+
+    &:hover .sidebar__line {
+      width: 20px;
+    }
+  }
+
+  &__line {
+      display: block;
+      width: 10px;
+      height: 2px;
+      background-color: #0768b5;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      margin-right: 10px;
+  }
+
+  &__link-active {
+
+    & .sidebar__item {
+
+      & .sidebar__line {
+        width: 20px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+}

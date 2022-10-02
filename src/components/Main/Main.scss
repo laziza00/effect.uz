@@ -1,0 +1,30 @@
+.main {
+
+  &__box {
+    width: 771px;
+    margin: 0 48px;
+    padding-top: 16px;
+  }
+
+  &__title {
+    font-family: 'Bluu Next';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #072d4b;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    display: block;
+    padding: 15px 10px;
+    margin: 0;
+
+    &__box {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
